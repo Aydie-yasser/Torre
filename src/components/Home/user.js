@@ -1,12 +1,11 @@
 import React from "react";
-import data from "../../services/data.js"
+import {data} from "../../services/data.js"
 import "./styles/userstyles.css"; 
 import rating from "./rating.png"
 import scrum from "./scrum.png"
 import manClimbing from "./man-climbing-stairs.png"
 import knowledge from "./idea.png"
 import proficient from "./interest-rate.png"
-import "rc-tooltip/assets/bootstrap.css";
 
 
 
@@ -22,7 +21,6 @@ export default class Home extends React.Component {
         proficient:[],
         beginner :[],
         noExp :[],
-        toolTipExpert : "Expeirenced engough to perform without supervision."  ,
         skillsStyle : {"display":"flex","flex-direction":"row","align-item":"center"}
         }
 
@@ -79,7 +77,7 @@ export default class Home extends React.Component {
             <div>
                 <div className="hex">
                     <div className="hex-background"> 
-                        <img src = {this.state.userData.person.picture} alt = {this.state.userData.person.name} ></img>
+                        <img src = {this.state.userData.person.picture} alt = {this.state.userData.person.name}></img>
                     </div>
                 </div>
                 <div className="userName">
@@ -91,7 +89,7 @@ export default class Home extends React.Component {
                         </h3>
                         </div>
                         <div style ={this.state.skillsStyle}>
-                        <img src = {scrum} className="cycleIcon"></img>
+                        <img src = {scrum} className="cycleIcon" alt ="scrum"></img>
                         <span>Master/Influencer:</span>
                         </div>
                         {
@@ -103,7 +101,7 @@ export default class Home extends React.Component {
                             : <span className="skillButton"> [Empty] </span>
                         }         
                         <div style ={this.state.skillsStyle}>
-                        <img src = {rating} className="cycleIcon"></img>
+                        <img src = {rating} className="cycleIcon" alt ="rating"></img>
                         <span>Expert:</span>
                         </div>
                         {
@@ -115,7 +113,7 @@ export default class Home extends React.Component {
                             : <span className="skillButton"> [Empty] </span>
                         }         
                         <div style ={this.state.skillsStyle}>
-                        <img src = {proficient} className="cycleIcon"></img>
+                        <img src = {proficient} className="cycleIcon" alt="proficient"></img>
                         <span>Proficient:</span>
                         </div>
                         {
@@ -127,7 +125,7 @@ export default class Home extends React.Component {
                             : <span > [Empty] </span>
                         }       
                         <div style ={this.state.skillsStyle}>
-                        <img src = {manClimbing} className="cycleIcon"></img>
+                        <img src = {manClimbing} className="cycleIcon" alt="manClimbing"></img>
                         <span>Beginner:</span>
                         </div>
                         {
@@ -139,7 +137,7 @@ export default class Home extends React.Component {
                             : <span className="skillButton"> [Empty] </span>
                         }     
                          <div style ={this.state.skillsStyle}>
-                        <img src = {knowledge} className="cycleIcon"></img>
+                        <img src = {knowledge} className="cycleIcon" alt="knowledge"></img>
                         <span>No experience, but interested: </span>
                         </div>
                         {

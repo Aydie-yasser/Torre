@@ -1,7 +1,7 @@
 import axios from '../axiosConfig.js'
 
 
-export default (data) => {
+export const data = (data) => {
 
 
     const options =
