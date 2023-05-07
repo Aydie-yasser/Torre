@@ -6,9 +6,7 @@ import scrum from "./scrum.png"
 import manClimbing from "./man-climbing-stairs.png"
 import knowledge from "./idea.png"
 import proficient from "./interest-rate.png"
-import search from "./search.png"
 import "rc-tooltip/assets/bootstrap.css";
-// import {FaAccessibleIcon} from "react-icons/fa";
 
 
 
