@@ -39,20 +39,20 @@ export default class Home extends React.Component {
             this.setState({
                 deafultPage: false,
                 userData : result,
-                expert : result?.strengths?.filter((res) => { 
-                    return res.proficiency == "expert" 
+                expert : result.strengths.filter((res) => { 
+                    return res.proficiency === "expert" 
                 }),
-                proficient : result?.strengths?.filter((res) => { 
-                    return res.proficiency == "proficient" 
+                proficient : result.strengths.filter((res) => { 
+                    return res.proficiency === "proficient" 
                 }),
-                beginner : result?.strengths?.filter((res) => { 
-                    return res.proficiency == "novice" 
+                beginner : result.strengths.filter((res) => { 
+                    return res.proficiency === "novice" 
                 }),
-                noExp : result?.strengths?.filter((res) => { 
-                    return res.proficiency == "no-experience-interested" 
+                noExp : result.strengths.filter((res) => { 
+                    return res.proficiency === "no-experience-interested" 
                 }),
-                master : result?.strengths?.filter((res) => { 
-                    return res.proficiency == "master" 
+                master : result.strengths.filter((res) => { 
+                    return res.proficiency === "master" 
                 }),
                 loader: false
             })
